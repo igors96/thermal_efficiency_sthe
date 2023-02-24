@@ -1,0 +1,1 @@
+# thermal_efficiency_sthe
