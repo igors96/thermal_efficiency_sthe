@@ -4,7 +4,7 @@ import xgboost as xg
 from htbuilder import div, big, h2, styles
 from htbuilder.units import rem
 
-# Creating an instance of XGBoost Regressor and fitting the model to the training data
+# Creating an instance of XGBoost Regressor and loading the saved model
 
 xgb_r = xg.XGBRegressor()
 xgb_r.load_model("model_xgb_r.model")
@@ -30,6 +30,7 @@ def get_heat_exchanger_data():
 
     return features
 
+# Creating an instance to get the data from the user
 heat_exchanger_input = get_heat_exchanger_data()
 
 # Making predictions
