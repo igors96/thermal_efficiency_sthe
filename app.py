@@ -38,7 +38,7 @@ prediction = xgb_r.predict(heat_exchanger_input)
 rounded = list(map('{:.2f}%'.format, prediction))
 
 # Creating parameters to use after
-color = '#5AC39B'
+color = '#FF4D4C'
 title = 'HEAT EXCHANGER THERMAL EFFICIENCY'
 value = rounded
 
